@@ -1,0 +1,14 @@
+{
+  "name": "dlohelper",
+  "version": "1.0.0",
+  "description": "Lil Helper",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "ForYaSee",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
