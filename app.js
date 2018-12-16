@@ -3,6 +3,12 @@ const config = require('./config.json');
 const client = new Discord.Client();
 
 client.on('ready', () => {
+    client.user.setPresence({
+        game: {
+            name: '!help'
+        },
+        status: 'online'
+    });
     console.log(`Started.`);
 });
 
@@ -29,7 +35,7 @@ client.on('message', message => {
         }
     } else if (message.content.toLowerCase() === '!help') {
         message.channel.send('`!german` - Toggles your german role\n' +
-                     '`!announcements` - Toggles your announcements role');
+            '`!announcements` - Toggles your announcements role');
     }
 });
 
